@@ -1,0 +1,15 @@
+.carousel-caption {
+    top: 150px;
+    bottom: auto;
+    font-size: 100px;
+}
+
+.navbar {
+    background-color: transparent;
+    box-shadow: 0px 1px 20px #eaeaea;
+    transition: background-color 1s ease 0s;
+}
+
+.navbar.solid {
+    transition: background-color 1s ease 0s;
+}

@@ -1,8 +1,8 @@
 <!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container-fluid">
-        <a href="/"><i class="navbar-brand fas fa-user-ninja"></i><span class="navbar-text">Codr Kai</span></a>
-        <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu"><i class="navbar-toggler-icon"></i></a>
+        <a href="index.html"><i class="navbar-brand fas fa-user-ninja"></i><span class="navbar-text">Codr Kai</span></a>
+        <a href="index.html" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu"><i class="navbar-toggler-icon"></i></a>
         <div class="navbar-collapse collapse" id="navbar-menu">
             <div class="navbar-nav ml-auto">
                 <a href="#home" class="nav-item nav-link">Home</a>
@@ -12,19 +12,19 @@
                     <a href="#projects" class="nav-item nav-link dropdown-toggle" id="projects-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="projects-dropdown">
                         <h5 class="dropdown-header"><i class="fab fa-python"></i> Python</h5>
-                        <a href="/projects.html" class="dropdown-item small">Python Project One</a>
-                        <a href="/projects.html" class="dropdown-item small">Python Project Two</a>
-                        <a href="/projects.html" class="dropdown-item small">Python Project Three</a>
+                        <a href="projects.html" class="dropdown-item small">Python Project One</a>
+                        <a href="projects.html" class="dropdown-item small">Python Project Two</a>
+                        <a href="projects.html" class="dropdown-item small">Python Project Three</a>
                         <div class="dropdown-divider"></div>
 
                         <h5 class="dropdown-header"><i class="fab fa-node-js"></i> Node</h5>
-                        <a href="/projects.html" class="dropdown-item small">Node Project One</a>
-                        <a href="/projects.html" class="dropdown-item small">Node Project Two</a>
+                        <a href="projects.html" class="dropdown-item small">Node Project One</a>
+                        <a href="projects.html" class="dropdown-item small">Node Project Two</a>
                         <div class="dropdown-divider"></div>
 
                         <h5 class="dropdown-header"><i class="fab fa-react"></i> React</h5>
-                        <a href="/projects.html" class="dropdown-item small">React Project One</a>
-                        <a href="/projects.html" class="dropdown-item small">React Project Two</a>
+                        <a href="projects.html" class="dropdown-item small">React Project One</a>
+                        <a href="projects.html" class="dropdown-item small">React Project Two</a>
                     </div>
                 </div>
                 
@@ -32,19 +32,31 @@
                 <div class="dropdown">
                     <a href="#hobbies" class="nav-item nav-link dropdown-toggle" id="hobbies-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hobbies</a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="hobbies-dropdown">
-                        <h5 class="dropdown-header"><i class="fas fa-snowflake"></i> Snowboarding</h5>
-                        <a href="/hobbies.html" class="dropdown-item small">Burton Blunt</a>
+                        <h5 class="dropdown-header"><i class="fas fa-bolt"></i> Tesla</h5>
+                        <a href="hobbies.html" class="dropdown-item small">Model S</a>
+                        <a href="hobbies.html" class="dropdown-item small">Model 3</a>
+                        <a href="hobbies.html" class="dropdown-item small">Model X</a>
                         <div class="dropdown-divider"></div>
 
-                        <h5 class="dropdown-header"><i class="fas fa-bolt"></i> Tesla</h5>
-                        <a href="/hobbies.html" class="dropdown-item small">Model S</a>
-                        <a href="/hobbies.html" class="dropdown-item small">Model 3</a>
-                        <a href="/hobbies.html" class="dropdown-item small">Model X</a>
+                        <h5 class="dropdown-header"><i class="fas fa-snowflake"></i> Snowboarding</h5>
+                        <a href="hobbies.html" class="dropdown-item small">Burton Blunt</a>
                     </div>
                 </div>
 
-                <a href="/contact.html" class="nav-item nav-link"><i class="fas fa-envelope-open"></i> Contact</a>
+                <a href="#contact" class="nav-item nav-link" data-toggle="modal" data-target="#contactModal"><i class="fas fa-envelope-open"></i> Contact</a>
             </div>
         </div>
     </div>
 </nav>
+
+<!-- contact modal (hidden) -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Contact Info</h4>
+            </div>
+            <div class="modal-body">Contact me @ codrkai@gmail.com</div>
+        </div>
+    </div>
+</div>
