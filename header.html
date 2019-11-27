@@ -1,8 +1,8 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container-fluid">
-        <a href="index.html"><i class="navbar-brand fas fa-user-ninja"></i><span class="navbar-text">Codr Kai</span></a>
-        <a href="index.html" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu"><i class="navbar-toggler-icon"></i></a>
+        <a href="#about" data-toggle="modal" data-target="#aboutModal"><i class="navbar-brand fas fa-user-ninja"></i><span class="navbar-text">Codr Kai</span></a>
+        <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu"><i class="navbar-toggler-icon"></i></a>
         <div class="navbar-collapse collapse" id="navbar-menu">
             <div class="navbar-nav ml-auto">
                 <a href="index.html" class="nav-item nav-link">Home</a>
@@ -43,20 +43,30 @@
                     </div>
                 </div>
 
-                <a href="#contact" class="nav-item nav-link" data-toggle="modal" data-target="#contactModal"><i class="fas fa-envelope-open"></i> Contact</a>
+                <a href="#contactAnchor" class="nav-item nav-link"><i class="fas fa-envelope-open"></i> Contact</a>
             </div>
         </div>
     </div>
 </nav>
 
 <!-- contact modal (hidden) -->
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Contact Info</h4>
+                <h4 class="modal-title">About Me</h4>
             </div>
-            <div class="modal-body">Contact me @ codrkai@gmail.com</div>
+            <div class="modal-body">
+                <img src="./images/codrkai.jpg" alt="Codr Kai">
+
+                <p>
+                    <i class="fas fa-envelope"></i> codrkai@gmail.com
+                    <br><i class="fas fa-camera"></i> instagram: 
+                    <br><i class="fab fa-facebook-square"></i> facebook 
+                    <br><i class="fab fa-twitter-square"></i> twitter: 
+                    <br><i class="fab fa-google-plus-square"></i> google+ 
+                </p>
+            </div>
         </div>
     </div>
 </div>
