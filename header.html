@@ -1,65 +1,67 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container-fluid">
-        <a href="#about" data-toggle="modal" data-target="#aboutModal"><i class="navbar-brand fas fa-user-ninja"></i><span class="navbar-text">Codr Kai</span></a>
+
+        <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#aboutModal" ><i class="navbar-brand fas fa-user-ninja"></i><span class="navbar-text">Codr Kai</span></a>
+
         <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu"><i class="navbar-toggler-icon"></i></a>
         <div class="navbar-collapse collapse" id="navbar-menu">
             <div class="navbar-nav ml-auto">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                
-                <!-- projects dropdown -->
+                <a class="nav-item nav-link" href="#home">Home</a>
+
                 <div class="dropdown">
-                    <a href="#projects" class="nav-item nav-link dropdown-toggle" id="projects-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="projects-dropdown">
+                    <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#projects">Projects</a>
+                    <div class="dropdown-menu">
                         <h5 class="dropdown-header"><i class="fab fa-python"></i> Python</h5>
-                        <a href="projects.html" class="dropdown-item small">Python Project One</a>
-                        <a href="projects.html" class="dropdown-item small">Python Project Two</a>
-                        <a href="projects.html" class="dropdown-item small">Python Project Three</a>
+                        <a href="#projectAnchor" class="dropdown-item small">Python Data Scraping</a>
+                        <a href="#projectAnchor" class="dropdown-item small">Python Facial Recognition</a>
+                        <a href="#projectAnchor" class="dropdown-item small">Upcoming Python Project</a>
+
                         <div class="dropdown-divider"></div>
 
                         <h5 class="dropdown-header"><i class="fab fa-node-js"></i> Node</h5>
-                        <a href="projects.html" class="dropdown-item small">Node Project One</a>
-                        <a href="projects.html" class="dropdown-item small">Node Project Two</a>
-                        <div class="dropdown-divider"></div>
-
-                        <h5 class="dropdown-header"><i class="fab fa-react"></i> React</h5>
-                        <a href="projects.html" class="dropdown-item small">React Project One</a>
-                        <a href="projects.html" class="dropdown-item small">React Project Two</a>
+                        <a href="#projectAnchor" class="dropdown-item small">Node Project #1</a>
+                        <a href="#projectAnchor" class="dropdown-item small">Node Project #2</a>
                     </div>
                 </div>
-                
-                <!-- hobbies dropdown-->
+
                 <div class="dropdown">
-                    <a href="#shop" class="nav-item nav-link dropdown-toggle" id="shop-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="shop-dropdown">
-                        <h5 class="dropdown-header"><i class="fas fa-bolt"></i> T-Shirts</h5>
-                        <a href="shop.html" class="dropdown-item small">Retro</a>
-                        <a href="shop.html" class="dropdown-item small">Urban</a>
-                        <a href="shop.html" class="dropdown-item small">Classic</a>
+                    <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#shop">Shop</a>
+                    <div class="dropdown-menu">
+                        <h5 class="dropdown-header">T-Shirts</h5>
+                        <a href="shop.html" class="dropdown-item small">Retro Shirts</a>
+                        <a href="shop.html" class="dropdown-item small">Urban Shirts</a>
+                        <a href="shop.html" class="dropdown-item small">Classic Shirts</a>
                         <div class="dropdown-divider"></div>
 
-                        <h5 class="dropdown-header"><i class="fas fa-snowflake"></i> Hoodies</h5>
-                        <a href="shop.html" class="dropdown-item small">Retro</a>
-                        <a href="shop.html" class="dropdown-item small">Urban</a>
-                        <a href="shop.html" class="dropdown-item small">Classic</a>
+                        <h5 class="dropdown-header">Hoodies</h5>
+                        <a href="shop.html" class="dropdown-item small">Retro Hoodies</a>
+                        <a href="shop.html" class="dropdown-item small">Urban Hoodies</a>
+                        <a href="shop.html" class="dropdown-item small">Classic Hoodies</a>
+                        <div class="dropdown-divider"></div>
+
+                        <h5 class="dropdown-header">Headbands</h5>
+                        <a href="shop.html" class="dropdown-item small">Girls</a>
+                        <a href="shop.html" class="dropdown-item small">Guys</a>
+                        <a href="shop.html" class="dropdown-item small">Unisex</a>
                     </div>
                 </div>
 
-                <a href="#contactAnchor" class="nav-item nav-link"><i class="fas fa-envelope-open"></i> Contact</a>
+                <a class="nav-item nav-link" href="#contactAnchor"><i class="fas fa-envelope-open"></i> Contact</a>
             </div>
         </div>
     </div>
 </nav>
 
-<!-- contact modal (hidden) -->
-<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- About modal (hidden) -->
+<div class="modal fade" id="aboutModal" role="dialog" tabindex="-1">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">About Me</h4>
+                <div class="modal-title">About Me</div>
             </div>
             <div class="modal-body text-center">
-                <img src="./images/codrkai.jpg" alt="Codr Kai">
+                <img src="./images/codrkai.jpg" width="150" alt="">
                 <p>
                     <i class="fas fa-envelope"></i> 
                     <i class="fas fa-camera"></i> 

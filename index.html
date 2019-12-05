@@ -4,49 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Codr Kai Portfolio</title>
+    <title>Bootstrap 4 Website</title>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    
-    <!-- bootstrap 4 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
-    <!-- fontawesome 5.11.2 -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Bootstrap 4.4.1 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Fontawesome 5.11.2 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-light navbar-expand-md bg-light sticky-top">
-    <div class="container-fluid">
-        <a href="#" class="navbar-brand"><i class="fas fa-user-ninja"></i> </a>
-        <div class="navbar-text">Codr Kai</div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-menu">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-            </ul>
+    <div id="header-include"></div>
+
+    <!-- Slider -->
+    <div class="carousel" id="mainSlide">
+        <div class="carousel-inner">
+            <img class="w-100 d-block" src="./images/slide-mountains.jpg" alt="">
         </div>
     </div>
-</nav>
 
-<!-- Content -->
-<div class="container-fluid">
-    <h1 class="text-center mt-5">Codr Kai Portfolio</h1>
-    <p class="text-center">...</p>
-</div>
-    
+    <!-- Content -->
+    <div class="container-fluid p-5">
+        <h1 id="projectAnchor">Project</h1>
+        
+        <!-- cards -->
+
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="./images/projects-macbook-stats.jpg" alt="">
+                <div class="card-body">
+                    <h6 class="card-title">Python Data Scraping</h6>
+                    <p class="card-text">My first Python project focused on gathering data from social media to compare it's impact on animals...</p>
+                    <p class="text-center"><a class="btn btn-sm btn-dark" href="#">More Info</a></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="./images/projects-robot.jpg" alt="">
+                <div class="card-body">
+                    <h6 class="card-title">Python Facial Recognition</h6>
+                    <p class="card-text">This Python App will scan a persons face and compare them to the closest resembling animal...</p>
+                    <p class="text-center"><a class="btn btn-sm btn-secondary" href="#">More Info</a></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="./images/projects-robodog.jpg" alt="">
+                <div class="card-body">
+                    <h6 class="card-title">Upcoming Python Project</h6>
+                    <p class="card-text">Coming Soon</p>
+                    <p class="text-center"><a class="btn btn-sm btn-primary" href="#">More Info</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-include"></div>
+
 </body>
 </html>
