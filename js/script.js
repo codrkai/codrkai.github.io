@@ -13,7 +13,7 @@ $(function() {
     $('.dropdown-item, .nav-link').on('click', function(e) {
         if ( this.hash !== "" ) {
             e.preventDefault();
-            const anchor = this.hash;
+            var anchor = this.hash;
 
             $('html, body').animate({
                 scrollTop: $(anchor).offset().top
