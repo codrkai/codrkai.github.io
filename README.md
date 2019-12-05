@@ -1,8 +1,3 @@
 # codrkai.github.io
 
-Personal Portfolio Site!
-
-1.
-2.
-3.
-4.
+A Bootstrap 4 Website Example using Fontawesome
