@@ -27,3 +27,10 @@ footer a {
 .black-star {
     color: #ccc;
 }
+
+.shop-cart {
+    font-size: 0.7em;
+    background-color:royalblue;
+    border-radius: 8px;
+    padding: 3px 8px;
+}
