@@ -1,5 +1,4 @@
 $(function() {
-
     $('#header-include').load('https://codrkai.github.io/header.html');
     $('#footer-include').load('https://codrkai.github.io/footer.html');
 
