@@ -10,10 +10,10 @@ $(function() {
         }
     });
 
-    $('.dropdown-item').on('click', function(e) {
+    $('.dropdown-item, .nav-item').on('click', function(e) {
         if ( this.hash !== "" ) {
             e.preventDefault();
-            var anchor = this.hash; // #projectAnchor
+            var anchor = this.hash;
 
             $('html, body').animate({
                 scrollTop: $(anchor).offset().top
